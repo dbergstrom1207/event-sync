@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meeting sync</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Meeting sync</h1>
+        <p>CRM and calendar meetings, with a clear record of every source.</p>
+      </header>
+      <p id="stats" class="totals" aria-label="Meeting totals"></p>
+      <section class="workspace" aria-label="Meeting workspace">
+        <div class="toolbar" role="search" aria-label="Search meetings">
+          <label class="search-label"
+            >Search meetings
+            <input
+              id="search"
+              type="search"
+              placeholder="Title, client, owner, or source ID"
+            />
+          </label>
+          <div class="toolbar-actions">
+            <details id="filter-menu" class="filter-menu">
+              <summary id="filter-toggle">
+                <span id="filter-label">All meetings</span>
+              </summary>
+              <fieldset id="filter" class="filter-options">
+                <legend class="visually-hidden">Filter meetings</legend>
+                <label
+                  ><input type="radio" name="filter" value="all" checked /><span
+                    >All meetings</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="filter" value="review" /><span
+                    >Needs review</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="filter" value="conflicts" /><span
+                    >Conflicting values</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="filter" value="crm" /><span
+                    >CRM</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="filter" value="calendar" /><span
+                    >Calendar</span
+                  ></label
+                >
+              </fieldset>
+            </details>
+            <button id="refresh" type="button">Refresh view</button>
+          </div>
+        </div>
+        <p id="status" role="status" aria-live="polite">Loading meetings...</p>
+        <section id="meetings" aria-label="Meetings"></section>
+      </section>
+      <footer>
+        Open a meeting to inspect the matching decision and source values. Times
+        without a timezone stay as provided. Restart the server after editing
+        source files.
+      </footer>
+    </main>
+  </body>
+</html>

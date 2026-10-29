@@ -1,0 +1,74 @@
+[
+  {
+    "id": "crm-101",
+    "title": "Acme quarterly review",
+    "client_name": "Acme",
+    "meeting_date": "2026-11-02T10:00:00-05:00",
+    "end_time": "2026-11-02T11:00:00-05:00",
+    "relationship_owner": "Jordan Lee",
+    "attendees": [
+      "alex@acme.example",
+      "jordan@sales.example"
+    ],
+    "location": "In-Person"
+  },
+  {
+    "id": "crm-102",
+    "title": "Beacon discovery",
+    "client_name": "Beacon",
+    "meeting_date": "2026-11-03T16:00:00Z",
+    "relationship_owner": "Sam Rivera",
+    "attendees": [
+      "lee@beacon.example"
+    ],
+    "location": "Teams"
+  },
+  {
+    "id": "crm-103",
+    "title": "Cedar renewal",
+    "client_name": "Cedar",
+    "meeting_date": "2026-11-04T14:00:00Z",
+    "relationship_owner": "Taylor Morgan",
+    "attendees": [
+      "kim@cedar.example"
+    ],
+    "location": "HQ"
+  },
+  {
+    "id": "crm-103-copy",
+    "title": "Cedar renewal",
+    "client_name": "Cedar",
+    "meeting_date": "2026-11-04T14:00:00Z",
+    "relationship_owner": "Taylor Morgan",
+    "attendees": [
+      "kim@cedar.example"
+    ],
+    "location": "HQ"
+  },
+  {
+    "id": "crm-bad",
+    "title": "Delta planning",
+    "client_name": "Delta",
+    "meeting_date": "not-a-date",
+    "attendees": [
+      "bad-email",
+      {
+        "email": "pat@delta.example"
+      }
+    ]
+  },
+  {
+    "id": "crm-amb",
+    "title": "Elm check-in",
+    "client_name": "Elm",
+    "meeting_date": "2026-11-06T09:00:00Z",
+    "attendees": [
+      "jo@elm.example"
+    ]
+  },
+  {
+    "id": "crm-missing",
+    "client_name": "Fir",
+    "meeting_date": "2026-11-07T12:00:00Z"
+  }
+]

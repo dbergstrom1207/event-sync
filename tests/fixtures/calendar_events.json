@@ -1,0 +1,64 @@
+[
+  {
+    "id": "cal-1",
+    "summary": "Acme quarterly review",
+    "start": {
+      "dateTime": "2026-11-02T15:05:00Z"
+    },
+    "end": {
+      "dateTime": "2026-11-02T16:00:00Z"
+    },
+    "attendees": [
+      {
+        "email": "alex@acme.example"
+      },
+      {
+        "email": "jordan@sales.example"
+      }
+    ],
+    "location": "Zoom"
+  },
+  {
+    "id": "cal-2",
+    "summary": "Beacon discovery",
+    "start": "2026-11-03T16:00:00Z",
+    "attendees": [
+      "lee@beacon.example"
+    ],
+    "location": "Teams"
+  },
+  {
+    "id": "cal-3",
+    "summary": "Internal sales standup",
+    "start": "2026-11-05T09:00:00Z",
+    "attendees": [
+      "jordan@sales.example"
+    ],
+    "location": "Room 4",
+    "recurrence": [
+      "RRULE:FREQ=WEEKLY;BYDAY=TH"
+    ]
+  },
+  {
+    "id": "cal-amb-1",
+    "summary": "Elm check-in",
+    "start": "2026-11-06T09:02:00Z",
+    "attendees": [
+      "jo@elm.example"
+    ]
+  },
+  {
+    "id": "cal-amb-2",
+    "summary": "Elm check-in",
+    "start": "2026-11-06T09:04:00Z",
+    "attendees": [
+      "jo@elm.example"
+    ]
+  },
+  {
+    "id": "cal-naive",
+    "summary": "Timezone missing",
+    "start": "2026-11-08T09:00:00",
+    "attendees": []
+  }
+]

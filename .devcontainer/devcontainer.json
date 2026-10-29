@@ -1,0 +1,9 @@
+{
+  "name": "Event Sync Service",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {"label": "Event Sync", "onAutoForward": "openPreview"}
+  },
+  "postAttachCommand": "echo 'Run: python3 app.py --host 0.0.0.0'"
+}
